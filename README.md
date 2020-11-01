@@ -1,6 +1,6 @@
 # Vue dashboard test project
 
-![Preview](https://i.ibb.co/0Bs4FZX/Screenshot-2020-11-01-at-03-06-23.png)
+![Preview](https://i.ibb.co/V3QC2Cy/Screenshot-2020-11-01-at-03-09-49.png)
 
 ## Project setup
 ```
