@@ -1,4 +1,6 @@
-# vue
+# Vue dashboard test project
+
+![Preview](https://ibb.co/KNK4L7G)
 
 ## Project setup
 ```
