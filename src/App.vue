@@ -2,16 +2,22 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <Clock />
+    <Weather />
+    <Movies />
   </div>
 </template>
 
 <script>
-import Clock from './components/Clock.vue'
+import Clock from './components/Clock'
+import Weather from './components/Weather';
+import Movies from './components/Movies';
 
 export default {
   name: 'App',
   components: {
-    Clock
+    Clock,
+    Weather,
+    Movies,
   },
 }
 </script>
