@@ -16,13 +16,13 @@ export default {
       return 'https://image.tmdb.org/t/p/w500/'+this.data.poster_path;
     }
   },
-  mounted() {
-    // console.log(this.data);
-  }
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+
+@import "../styles/theme";
+
 section {
   display: flex;
   flex-direction: column;
@@ -33,8 +33,8 @@ section {
 img {
   height: 20rem;
   width: auto;
-  border-radius: 20px;
-  box-shadow: 0 0 10px #BBBBBB;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 }
 
 p {

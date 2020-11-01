@@ -1,5 +1,7 @@
 <template>
-  <h2>{{ hours }} : {{ minutes }} : {{ seconds }}</h2>
+  <section class="widget" id="clock-widget">
+    <span>{{ hours }} : {{ minutes }} : {{ seconds }}</span>
+  </section>
 </template>
 
 <script>
@@ -28,5 +30,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    Check out those trending movies today !👇 🎬
+    <h2 class="section-title"><font-awesome-icon icon="film" /> Trending movies</h2>
     <div id="movies">
       <Movie v-for="movie in movies" v-bind:data="movie" v-bind:key="movie.id" />
     </div>
@@ -10,7 +10,11 @@
 <script>
 
 import Movie from './Movie';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
 
+library.add(faFilm)
 
 export default {
   name: 'Movies',
@@ -27,15 +31,28 @@ export default {
   },
   components: {
     Movie,
+    FontAwesomeIcon,
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+
+@import "../styles/theme";
+
 #movies {
   margin: auto;
   justify-content: center;
   display: flex;
   margin-top: 2rem;
 }
+
+.section-title {
+  text-align: left;
+  margin-left: 5rem;
+  font-size: 4rem;
+  color: $primary;
+  text-shadow: $box-shadow;
+}
+
 </style>

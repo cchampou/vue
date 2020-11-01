@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <font-awesome-icon v-if="icon" v-bind:icon="icon" size="2x" />
-    <p v-if="temperature" id="temperature">{{ temperature }}°C</p>‍️
-  </div>
+  <section class="widget" id="weather-widget">
+    <font-awesome-icon v-if="icon" v-bind:icon="icon" />
+    <span v-if="temperature" id="temperature">{{ temperature }}°C</span>‍️
+  </section>
 </template>
 <script>
 
@@ -38,9 +38,26 @@ export default {
   }
 }
 </script>
-<style>
-#temperature {
-  font-size: 2rem;
-  margin: 0;
+
+<style lang="scss">
+
+@import "../styles/theme";
+
+.widget {
+  background-color: $primary;
+  color: white;
+  padding: 10px 20px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  font-size: 1.3rem;
+  margin: 3px;
 }
+
+#weather-widget {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 6rem;
+}
+
 </style>
