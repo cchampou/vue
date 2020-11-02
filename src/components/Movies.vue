@@ -26,7 +26,6 @@ export default {
       .then(response => response.json())
       .then(data => {
         this.movies = data.results.slice(0, 5);
-        console.log(data.results);
       })
   },
   components: {
@@ -41,10 +40,9 @@ export default {
 @import "../styles/theme";
 
 #movies {
-  margin: auto;
   justify-content: center;
   display: flex;
-  margin-top: 2rem;
+  margin: 2rem;
 }
 
 .section-title {
